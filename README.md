@@ -1,75 +1,138 @@
-# Hi, I'm girishbenni
+<div align="center">
 
-Building security tooling that fails closed, and a hardened Linux distribution.
+# Hey, I'm girishbenni 👋
 
-## Badges
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1200&color=8250DF&center=true&vCenter=true&width=650&lines=Building+security+tooling+that+fails+closed.&lines=Building+a+hardened+Linux+from+scratch.&lines=Python+%2F+Rust+%2F+Systems+engineering.)](https://git.io/typing-svg)
 
-[![Profile](https://img.shields.io/badge/Profile-happymode--25-8250df?logo=github)](https://github.com/happymode-25)
-[![Public repos](https://img.shields.io/badge/Public%20repos-7-8250df?logo=github)](https://github.com/happymode-25?tab=repositories)
-[![Followers](https://img.shields.io/badge/Followers-0-8250df?logo=github)](https://github.com/happymode-25?tab=followers)
-[![Stars](https://img.shields.io/badge/Stars-1-8250df?logo=github)](https://github.com/happymode-25?tab=repositories)
+<br>
 
-## Stats
+[![Visitors](https://komarev.com/ghpvc/?username=happymode-25&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/happymode-25)
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=happymode-25&show_icons=true&theme=radical&hide_border=true)
+</div>
 
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs?username=happymode-25&layout=compact&theme=radical&hide_border=true)
+---
 
-## Projects
+## 🔥 Contribution graph
 
-### network-mapper
+<div align="center">
 
-Network Mapper: automated network service discovery and vulnerability assessment
-platform. FastAPI + asyncio scanner with a React dashboard.
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=happymode-25&theme=radical&hide_border=true&area=true" alt="Contribution graph" />
+
+*Do not paste the raw `platane/snk` URL. That image renders the maintainer's
+activity, not yours. Fork the repo, enable its GitHub Action, then point this URL
+at your own fork.*
+
+</div>
+
+---
+
+## 🏷️ Badges
+
+<div align="center">
+
+[![Profile](https://img.shields.io/badge/Profile-happymode--25-8250df?logo=github&style=for-the-badge)](https://github.com/happymode-25)
+[![Followers](https://img.shields.io/badge/Followers-0-8250df?logo=github&style=for-the-badge)](https://github.com/happymode-25?tab=followers)
+[![Public repos](https://img.shields.io/badge/Public%20repos-7-8250df?logo=github&style=for-the-badge)](https://github.com/happymode-25?tab=repositories)
+[![Stars earned](https://img.shields.io/badge/Stars-1-8250df?logo=github&style=for-the-badge)](https://github.com/happymode-25?tab=repositories)
+[![Member since](https://img.shields.io/badge/Member%20since-Jun%202025-8250df?logo=github&style=for-the-badge)](https://github.com/happymode-25)
+
+</div>
+
+---
+
+## 📊 Stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=happymode-25&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=happymode-25&layout=compact&theme=radical&hide_border=true" alt="Top languages" />
+
+</div>
+
+---
+
+## 🚀 Projects
+
+### 📡 network-mapper
+
+Automated network service discovery and vulnerability assessment platform.
+FastAPI + asyncio scanner with a React dashboard.
 
 [![Language](https://img.shields.io/badge/Python-3.9+-3776ab?logo=python)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/happymode-25/network-mapper/blob/main/LICENSE)
 
-[View repository →](https://github.com/happymode-25/network-mapper)
+[Explore →](https://github.com/happymode-25/network-mapper)
 
-### n8n-learner-hub
+### ⚙️ n8n-learner-hub
 
 Automation learning hub built around n8n workflows.
 
 [![Stars](https://img.shields.io/badge/stars-1-yellow)](https://github.com/happymode-25/n8n-learner-hub)
 
-[View repository →](https://github.com/happymode-25/n8n-learner-hub)
+[Explore →](https://github.com/happymode-25/n8n-learner-hub)
 
-## Currently building
+---
 
-### Obsidian OS
+## 🔭 Currently building
 
-A Windows-feel Linux, hardened by default. A custom distribution whose desktop
-mirrors Windows 11 conventions, paired with a unified Bash/PowerShell shell. Five
-build flavors — `daily`, `developer`, `pentester`, `server`, `ghost` — each a
-single package list. Hardening maps to the CIS Debian Benchmark and is attested
-at boot.
+### 🖥️ Obsidian OS
 
-The base OS builds and boot-tests in CI: a hybrid BIOS+UEFI ISO, plus a boot test
-that asserts on a marker stock Debian cannot emit, so the test cannot pass against
-the wrong image.
+A **Windows-feel Linux, hardened by default.** A custom distribution whose desktop
+mirrors Windows 11 conventions, paired with a unified Bash/PowerShell shell.
 
-**Status, stated plainly:** the desktop does not exist yet. No window manager, no
-panel, no applications. The app packages are empty skeletons. Treat the Windows 11
-look as a Phase 2 deliverable. An earlier claim of Phase 0 completion was wrong
-and the discrepancy is documented with evidence in the repo.
+- **Five flavors** — `daily`, `developer`, `pentester`, `server`, `ghost` — each a single package list
+- **CIS-hardened** — mapped to the Debian Benchmark and attested at boot
+- **Hybrid ISO** — BIOS + UEFI, built by `mmdebstrap` → packages → overlays → squashfs
+- **Honest boot test** — asserts on a marker stock Debian cannot emit, so it cannot pass against the wrong image
 
-Private repo. Not linked here on purpose.
+> **Status, stated plainly:** the desktop does not exist yet. No window manager,
+> no panel, no applications — the app packages are empty skeletons. Treat the
+> Windows 11 look as a **Phase 2** deliverable. An earlier claim of Phase 0
+> completion was wrong, and the discrepancy is documented with evidence in the repo.
 
-### egress-broker
+`private` — not linked on purpose.
 
-A fail-closed egress proxy for an AI agent. DNS pinning, threshold alerting,
-per-client policy scoping, and a hash-chained tamper-evident audit log. One file,
-Python 3.9+ standard library, no dependencies.
+### 🛡️ egress-broker
 
-MIT licensed. Private repo — ask me for access.
+A **fail-closed egress proxy for an AI agent.** Single file, Python 3.9+ standard
+library, zero dependencies.
 
-## Stack
+- **DNS pinning** — stops resolution drifting under you
+- **Threshold alerting** — trips before a leak becomes a breach
+- **Per-client policy scoping** — each client gets its own rules
+- **Hash-chained audit log** — tamper-evident, sqlite-backed
 
-![Python](https://img.shields.io/badge/Python-3776ab?logo=python&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+MIT licensed. `private` — ask me for access.
+
+---
+
+## 🧰 Stack
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3776ab?logo=python&logoColor=white&style=for-the-badge)](https://www.python.org/)
+[![Rust](https://img.shields.io/badge/Rust-ffffff?logo=rust&logoColor=black&style=for-the-badge)](https://www.rust-lang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge)](https://react.dev/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=for-the-badge)](https://fastapi.tiangolo.com/)
+[![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=white&style=for-the-badge)](https://www.debian.org/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge)](https://www.kernel.org/)
+[![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?logo=powershell&logoColor=white&style=for-the-badge)](https://learn.microsoft.com/powershell/)
+
+</div>
+
+---
+
+## 💬 Ask me about
+
+`fail-closed design` · `hardened Linux` · `AI agent sandboxing` · `network scanning` · `boot attestation`
+
+---
+
+<div align="center">
+
+**Built with curiosity. Broken honestly.**
+
+[![Visitors](https://komarev.com/ghpvc/?username=happymode-25&label=views&color=8250df&style=flat)](https://github.com/happymode-25)
+
+</div>
