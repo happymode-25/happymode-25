@@ -37,13 +37,32 @@ Automation learning hub built around n8n workflows.
 
 ## Currently building
 
-**Obsidian OS** — a Windows-feel Linux, hardened by default. Custom distro whose
-desktop mirrors Windows 11 conventions, with a unified Bash/PowerShell shell,
-five flavors (`daily`, `developer`, `pentester`, `server`, `ghost`), and CIS
-Debian Benchmark hardening attested at boot.
+### Obsidian OS
 
-The base OS builds and boot-tests in CI. The desktop shell does not exist yet.
-Development is in a private repo.
+A Windows-feel Linux, hardened by default. A custom distribution whose desktop
+mirrors Windows 11 conventions, paired with a unified Bash/PowerShell shell. Five
+build flavors — `daily`, `developer`, `pentester`, `server`, `ghost` — each a
+single package list. Hardening maps to the CIS Debian Benchmark and is attested
+at boot.
+
+The base OS builds and boot-tests in CI: a hybrid BIOS+UEFI ISO, plus a boot test
+that asserts on a marker stock Debian cannot emit, so the test cannot pass against
+the wrong image.
+
+**Status, stated plainly:** the desktop does not exist yet. No window manager, no
+panel, no applications. The app packages are empty skeletons. Treat the Windows 11
+look as a Phase 2 deliverable. An earlier claim of Phase 0 completion was wrong
+and the discrepancy is documented with evidence in the repo.
+
+Private repo. Not linked here on purpose.
+
+### egress-broker
+
+A fail-closed egress proxy for an AI agent. DNS pinning, threshold alerting,
+per-client policy scoping, and a hash-chained tamper-evident audit log. One file,
+Python 3.9+ standard library, no dependencies.
+
+MIT licensed. Private repo — ask me for access.
 
 ## Stack
 
