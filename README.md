@@ -221,7 +221,6 @@ library, no dependencies.
 girishbenni@happymode-25:~$ ./connect --list
   github      https://github.com/happymode-25
   repos       https://github.com/happymode-25?tab=repositories
-  sponsors    https://github.com/sponsors/happymode-25
   linkedin    (not configured)
   twitter     (not configured)
   site        (not configured)
