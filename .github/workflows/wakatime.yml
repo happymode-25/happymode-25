@@ -1,0 +1,51 @@
+name: wakatime
+
+# Intentionally manual-only. The WakaTime stat card currently renders
+# "Make sure you have a public WakaTime profile" for this account, so the card
+# is not in the README. Enable this workflow only after you have a public
+# WakaTime profile, then uncomment the card block in README.md.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: gate on wakatime username
+        id: gate
+        env:
+          WAKATIME_USERNAME: ${{ secrets.WAKATIME_USERNAME }}
+        run: |
+          if [ -z "$WAKATIME_USERNAME" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "WAKATIME_USERNAME secret not set; nothing to do."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: pull wakatime card
+        if: steps.gate.outputs.configured == 'true'
+        env:
+          WAKATIME_USERNAME: ${{ secrets.WAKATIME_USERNAME }}
+        run: |
+          set -euo pipefail
+          mkdir -p stats
+          curl -fsSL --max-time 30 \
+            --get \
+            --data-urlencode "username=$WAKATIME_USERNAME" \
+            --data-urlencode "hide_border=true" \
+            --data-urlencode "bg_color=0D1117" \
+            --data-urlencode "title_color=00FF41" \
+            --data-urlencode "text_color=C9D1D9" \
+            --data-urlencode "hide_title=false" \
+            "https://github-readme-stats.vercel.app/api/wakatime" \
+            > stats/wakatime.svg
+          grep -q "Something went wrong" stats/wakatime.svg \
+            && { echo "card returned an error"; exit 1; } || true
+          echo "wrote stats/wakatime.svg"

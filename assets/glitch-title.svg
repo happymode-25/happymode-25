@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="140" viewBox="0 0 760 140" role="img" aria-label="happymode-25 glitch title">
+  <defs>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00ff41" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#00ff41" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="lines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000000" fill-opacity="0.34"/>
+    </pattern>
+  </defs>
+
+  <rect width="760" height="140" fill="#0d1117"/>
+  <rect width="760" height="140" fill="url(#scan)"/>
+
+  <!-- RGB split layers: same string, offset and recolored -->
+  <g font-family="Cascadia Mono, Fira Code, Consolas, monospace" font-size="46" font-weight="700" text-anchor="middle">
+    <g opacity="0.85">
+      <text x="383" y="86" fill="#ff00ff">happymode-25</text>
+      <animate attributeName="transform" values="translate(0,0);translate(-3,1);translate(2,-1);translate(0,0)" dur="3.2s" repeatCount="indefinite"/>
+    </g>
+    <g opacity="0.85">
+      <text x="377" y="86" fill="#00d9ff">happymode-25</text>
+      <animate attributeName="transform" values="translate(0,0);translate(3,-1);translate(-2,1);translate(0,0)" dur="2.6s" repeatCount="indefinite"/>
+    </g>
+    <text x="380" y="86" fill="#00ff41">happymode-25</text>
+  </g>
+
+  <!-- glitch slice: a clipped copy that jumps horizontally -->
+  <g>
+    <clipPath id="slice">
+      <rect x="0" y="58" width="760" height="14"/>
+    </clipPath>
+    <text x="380" y="86" clip-path="url(#slice)"
+          font-family="Cascadia Mono, Fira Code, Consolas, monospace" font-size="46"
+          font-weight="700" text-anchor="middle" fill="#d6ffe6">happymode-25</text>
+    <animate attributeName="opacity" values="1;1;0;0;1;1;0;1" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+
+  <rect width="760" height="140" fill="url(#lines)"/>
+
+  <text x="380" y="120" text-anchor="middle" fill="#00d9ff"
+        font-family="Cascadia Mono, Fira Code, Consolas, monospace" font-size="14"
+        letter-spacing="6">FAIL CLOSED</text>
+</svg>
